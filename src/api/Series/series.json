@@ -1,0 +1,31 @@
+[
+    {
+        "series": [
+            {
+                "method": "getSeries",
+                "description": "Get an economic data series.",
+                "request-type": "GET",
+                "parameters": {
+                    "series_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "The id for a series."
+                    },
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "9999-12-31 (latest available)",
+                        "description": "The end of the real-time period."
+                    }
+                }
+            }
+        ]
+    }
+]

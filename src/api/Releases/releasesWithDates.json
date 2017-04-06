@@ -1,0 +1,60 @@
+[
+    {
+        "releases/dates": [
+            {
+                "method": "getAllReleasesWithDates",
+                "description": "Get release dates for all releases of economic data.",
+                "request-type": "GET",
+                "parameters": {
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "9999-12-31 (latest available)",
+                        "description": "The end of the real-time period."
+                    },
+                    "limit": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 1000,
+                        "description": "The maximum number of results to return",
+                        "restrictions": "Must be an integer between 1 and 1000"
+                    },
+                    "offset": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "A non negative integer",
+                        "restrictions": "A non negative integer"
+                    },
+                    "order_by": {
+                        "required": false,
+                        "type": "string",
+                        "default": "series_id",
+                        "description": "Order results by values of the specified attribute.",
+                        "restrictions": "One of the following strings: 'release_date', 'release_id', 'release_name'."
+                    },
+                    "sort_order": {
+                        "required": false,
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Sort results is ascending or descending order for attribute values specified by order_by.",
+                        "restrictions": "One of the following strings: 'asc', 'desc'."
+                    },
+                    "include_release_dates_with_no_data": {
+                        "required": false,
+                        "type": "string",
+                        "default": false,
+                        "description": "Determines whether release dates with no data available are returned. The defalut value 'false' excludes release dates that do not have data. In particular, this excludes future release dates which may be available in the FRED release calendar or the ALFRED release calendar.",
+                        "restrictions": "One of the following strings: 'true', 'false'."
+                    }
+                }       
+            }
+        ]
+    }
+]

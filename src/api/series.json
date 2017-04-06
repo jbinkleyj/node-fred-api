@@ -1,0 +1,38 @@
+[
+    {
+        "subtopic": "Series",
+        "file": "./Series/series.json"
+    },
+    {
+        "subtopic": "Categories",
+        "file": "./Series/categories.json"
+    },
+    {
+        "subtopic": "Observations",
+        "file": "./Series/observations.json"
+    },
+    {
+        "subtopic": "Release",
+        "file": "./Series/release.json"
+    },
+    {
+        "subtopic": "TagsForSearch",
+        "file": "./Series/tagsForSearch.json"
+    },
+    {
+        "subtopic": "RelatedTagsForSearch",
+        "file": "./Series/relatedTagsForSearch.json"
+    },
+    {
+        "subtopic": "TagsForSeries",
+        "file": "./Series/tags.json"
+    },
+    {
+        "subtopic": "MostRecentlyUpdated",
+        "file": "./Series/updates.json"
+    },
+    {
+        "subtopic": "HistoricalDates",
+        "file": "./Series/vintageDates.json"
+    }
+]

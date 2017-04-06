@@ -1,0 +1,31 @@
+[
+    {
+        "series/release": [
+            {
+                "method": "getReleaseForSeries",
+                "description": "Get the release for an economic data series.",
+                "request-type": "GET",
+                "parameters": {
+                    "series_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "The id for a series."
+                    },
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The end of the real-time period."
+                    }
+                }
+            }
+        ]
+    }
+]

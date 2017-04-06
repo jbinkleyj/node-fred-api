@@ -1,0 +1,10 @@
+[
+    {
+        "subtopic": "Source",
+        "file": "./Source/source.json"
+    },
+    {
+        "subtopic": "Release",
+        "file": "./Course/release.json"
+    }
+]

@@ -1,0 +1,29 @@
+{
+    "title": "Fred API",
+    "topics": [
+        {
+            "name": "Category",
+            "file": "./category"
+        },
+        {
+            "name": "Releases",
+            "file": "./releases"
+        },
+        {
+            "name": "Release",
+            "file": "./release"
+        },
+        {
+            "name": "Series",
+            "file": "./series"
+        },
+        {
+            "name": "Sources",
+            "file": "./sources"
+        },
+        {
+            "name": "Tags",
+            "file": "./tags"
+        }
+    ]
+}
