@@ -1,57 +1,74 @@
-.topics {
-    background-color: #393939;
-    color: 'white';
+.logo {
+    margin: 0 auto;
+    display: block;
 }
 
-.topics:hover {
-    background-color: blue
+.title {
+    text-align: center;
+    color: oldlace;
+}
+
+.topics {
+    background-color: #393939;
+    min-height: 100vh;
+}
+
+.subtopics {
+    background-color: #ebf2f6;
+    min-height: 100vh;
+}
+
+.examples {
+    background-color: #393939;
+    min-height: 100vh;
 }
 
 .HolyGrail {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .HolyGrail-body {
-  display: flex;
-  flex: 1;
+    display: flex;
+    flex: 1;
 }
 
 .HolyGrail-content {
-  flex: 1;
+    flex: 1;
 }
 
-.HolyGrail-nav, .HolyGrail-ads {
-  /* 12em is the width of the columns */
-  flex: 0 0 12em;
+.HolyGrail-ads {
+    flex: 0 0 45em;
 }
 
 .HolyGrail-nav {
-  /* put the nav on the left */
-  order: -1;
+    flex: 0 0 25em;
 }
 
 .HolyGrail,
 .HolyGrail-body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .HolyGrail-nav {
-  order: -1;
+    order: -1;
 }
 
 @media (min-width: 768px) {
-  .HolyGrail-body {
-    flex-direction: row;
-    flex: 1;
-  }
-  .HolyGrail-content {
-    flex: 1;
-  }
-  .HolyGrail-nav, .HolyGrail-ads {
-    /* 12em is the width of the columns */
-    flex: 0 0 12em;
-  }
+    .HolyGrail-body {
+        flex-direction: row;
+        flex: 1;
+    }
+    .HolyGrail-content {
+        flex: 1;
+    }
+    .HolyGrail-nav {
+        flex: 0 0 45em;
+    }
+    .HolyGrail-nav {
+        /* 12em is the width of the columns */
+        flex: 0 0 25em;
+    }
 }

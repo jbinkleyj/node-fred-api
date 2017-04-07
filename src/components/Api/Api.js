@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { Drawer, MenuItem, Paper } from 'material-ui'
+import { Drawer, MenuItem, Paper, FlatButton, Avatar } from 'material-ui'
 import "./Api.css";
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
+import logo from '../../api/logo.png';
 
 const style = {
-  display: 'inline-block',  
-  margin: '16px 32px 16px 0'
+    button: {
+        color: 'white'
+    },
+    image: {
+        margin: 5
+    }
 };
 
 class Api extends Component {
@@ -20,30 +25,37 @@ class Api extends Component {
     render() {
         return (
             <div className="HolyGrail-body">
+                <nav className="HolyGrail-nav">
+                    <div className="topics">
+                        <img className="logo" src={logo} />
+                        <h2 className="title"> Fred 2 Database Api </h2>
+                        <MenuItem
+                            primaryText="Category"
+                            style={style.button}
+                            rightIcon={<ArrowDropRight />}
+                            menuItems={[
+                                <MenuItem>Category</MenuItem>,
+                                <MenuItem>Child Categories</MenuItem>,
+                                <MenuItem>Related Categories</MenuItem>
+                            ]}
+                        />
+                        <MenuItem style={style.button}>Related Tags</MenuItem>
+                        <MenuItem style={style.button}>Release</MenuItem>
+                        <MenuItem style={style.button}>Releases</MenuItem>
+                        <MenuItem style={style.button}>Series</MenuItem>
+                        <MenuItem style={style.button}>Source</MenuItem>
+                    </div>
+                </nav>
                 <main className ="HolyGrail-content">
-                     <Paper style={style}>
-                        <Drawer open={this.state.open}>
-                            <h1> Fred Database </h1>
-                            <MenuItem
-                                primaryText="Category"
-                                rightIcon={<ArrowDropRight />}
-                                className="topics"
-                                menuItems={[
-                                    <MenuItem>Category</MenuItem>,
-                                    <MenuItem>Child Categories</MenuItem>,
-                                    <MenuItem>Related Categories</MenuItem>
-                                ]}
-                            />
-                            <MenuItem className="topics">Related Tags</MenuItem>
-                            <MenuItem className="topics">Release</MenuItem>
-                            <MenuItem className="topics">Releases</MenuItem>
-                            <MenuItem className="topics">Series</MenuItem>
-                            <MenuItem className="topics">Source</MenuItem>
-                        </Drawer>
-                    </Paper>
+                     <div className="subtopics">
+                     
+                     </div>
                 </main>
-                <nav className="HolyGrail-nav">World</nav>
-                <aside className="HolyGrail-ads">Examples</aside>
+                <aside className="HolyGrail-ads">
+                    <div className="examples">
+                    
+                    </div>
+                </aside>
             </div>
            
         );
