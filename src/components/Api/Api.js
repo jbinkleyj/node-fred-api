@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Drawer, MenuItem, Paper, FlatButton, Avatar } from 'material-ui'
+import { MenuItem } from 'material-ui'
 import "./Api.css";
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import logo from '../../api/logo.png';
@@ -27,7 +27,7 @@ class Api extends Component {
             <div className="HolyGrail-body">
                 <nav className="HolyGrail-nav">
                     <div className="topics">
-                        <img className="logo" src={logo} />
+                        <img alt="logo" className="logo" src={logo} />
                         <h2 className="title"> Fred 2 Database Api </h2>
                         <MenuItem
                             primaryText="Category"
@@ -46,9 +46,35 @@ class Api extends Component {
                         <MenuItem style={style.button}>Source</MenuItem>
                     </div>
                 </nav>
-                <main className ="HolyGrail-content">
+                <main className="HolyGrail-content">
                      <div className="subtopics">
-                     
+                        <section>
+                            <h1 className="header"> Overview </h1>
+                            <div className="description">
+                                <p>
+                                    Welcome to the Fred 2 Api. Below is a list of routes...
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <h1 className="header"> Authentication </h1>
+                            <div className="description">
+                                <p>
+                                    You must obtain an api key through the Fred 2 service. See this link...
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <h1 className="header"> Category </h1>
+                            <div className="description">
+                                <h2> Category </h2>
+                                <div> Gets all categories </div>
+                                <h5> HTTP Request </h5>
+                                <code> GET https://fred2.stlouis.com/categories </code>
+                                <h5> Query Parameters </h5>
+
+                            </div>
+                        </section>
                      </div>
                 </main>
                 <aside className="HolyGrail-ads">
