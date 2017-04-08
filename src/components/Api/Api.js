@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MenuItem } from 'material-ui'
+import { MenuItem, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui'
 import "./Api.css";
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import logo from '../../api/logo.png';
@@ -10,6 +10,9 @@ const style = {
     },
     image: {
         margin: 5
+    },
+    header: {
+        color: 'black'
     }
 };
 
@@ -67,19 +70,40 @@ class Api extends Component {
                         <section>
                             <h1 className="header"> Category </h1>
                             <div className="description">
-                                <h2> Category </h2>
+                                <h3> Category </h3>
                                 <div> Gets all categories </div>
                                 <h5> HTTP Request </h5>
-                                <code> GET https://fred2.stlouis.com/categories </code>
+                                <code className="request"> GET https://fred2.stlouis.com/categories </code>
                                 <h5> Query Parameters </h5>
-
+                                <Table>
+                                    <TableHeader className="parameter-header" adjustForCheckbox={false}>
+                                        <TableRow>
+                                            <TableHeaderColumn style={style.header}>Parameter</TableHeaderColumn>
+                                            <TableHeaderColumn style={style.header}>Description</TableHeaderColumn>
+                                            <TableHeaderColumn style={style.header}>Type</TableHeaderColumn>
+                                            <TableHeaderColumn style={style.header}>Required</TableHeaderColumn>
+                                        </TableRow>
+                                    </TableHeader>
+                                    <TableBody displayRowCheckbox={false}>
+                                        <TableRow>
+                                            <TableRowColumn>category_id</TableRowColumn>
+                                            <TableRowColumn>The id for a category.</TableRowColumn>
+                                            <TableRowColumn>Integer</TableRowColumn>
+                                            <TableRowColumn>Yes</TableRowColumn>
+                                        </TableRow>
+                                    </TableBody>
+                                </Table>
                             </div>
                         </section>
                      </div>
                 </main>
                 <aside className="HolyGrail-ads">
                     <div className="examples">
-                    
+                        <pre>
+                            <code>
+
+                            </code>
+                        </pre>
                     </div>
                 </aside>
             </div>

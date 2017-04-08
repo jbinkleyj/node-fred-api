@@ -1,3 +1,11 @@
+.parameter-header {
+    background-color: #ebf2f6; 
+}
+
+.parameter-row {
+    color: black;
+}
+
 .header {
     background-color: #fdfdfd;
     border-bottom: solid #ccc;
@@ -5,11 +13,17 @@
     padding: 0.5em;
 }
 
+.request {
+    background-color: #393939;
+    padding: 1em;
+    border-radius: 5px;
+    color: whitesmoke;
+    opacity: 0.9;
+}
+
 .description {
     padding-bottom: 4em;
     padding-left: 1em;
-    border-bottom: solid #ccc;
-    border-bottom-width: 1px;
 }
 
 .logo {
