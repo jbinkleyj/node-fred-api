@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItem, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui'
+import Prism from 'prismjs';
 import "./Api.css";
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import logo from '../../api/logo.png';
@@ -15,6 +16,8 @@ const style = {
         color: 'black'
     }
 };
+
+const code = Prism.highlight('import fred from node-fred;', Prism.languages.javascript);
 
 class Api extends Component {
 
@@ -76,7 +79,7 @@ class Api extends Component {
                                 <code className="request"> GET https://fred2.stlouis.com/categories </code>
                                 <h5> Query Parameters </h5>
                                 <Table>
-                                    <TableHeader className="parameter-header" adjustForCheckbox={false}>
+                                    <TableHeader className="parameter-header" displaySelectAll={false} adjustForCheckbox={false}>
                                         <TableRow>
                                             <TableHeaderColumn style={style.header}>Parameter</TableHeaderColumn>
                                             <TableHeaderColumn style={style.header}>Description</TableHeaderColumn>
@@ -99,11 +102,9 @@ class Api extends Component {
                 </main>
                 <aside className="HolyGrail-ads">
                     <div className="examples">
-                        <pre>
-                            <code>
-
-                            </code>
-                        </pre>
+                        <code>
+                            <div dangerouslySetInnerHTML={{__html: code}} />
+                        </code>
                     </div>
                 </aside>
             </div>
