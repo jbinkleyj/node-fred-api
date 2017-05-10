@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MenuItem, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui'
 import Prism from 'prismjs';
 import "./Api.css";
+import "./HolyGrail.css"
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import logo from '../../api/logo.png';
 
@@ -56,7 +57,7 @@ class Api extends Component {
                      <div className="subtopics">
                         <section>
                             <h1 className="header"> Overview </h1>
-                            <div className="description">
+                            <div className="overview">
                                 <p>
                                     Welcome to the Fred 2 Api. Below is a list of routes...
                                 </p>
@@ -64,15 +65,15 @@ class Api extends Component {
                         </section>
                         <section>
                             <h1 className="header"> Authentication </h1>
-                            <div className="description">
+                            <div className="authentication">
                                 <p>
                                     You must obtain an api key through the Fred 2 service. See this link...
                                 </p>
                             </div>
                         </section>
                         <section>
-                            <h1 className="header"> Category </h1>
                             <div className="description">
+                                <h1 className="header"> Category </h1>
                                 <h3> Category </h3>
                                 <div> Gets all categories </div>
                                 <h5> HTTP Request </h5>
@@ -97,16 +98,14 @@ class Api extends Component {
                                     </TableBody>
                                 </Table>
                             </div>
+                            <div className="examples">
+                                <code className="language-javascript">
+                                    <pre dangerouslySetInnerHTML={{__html: code}} />
+                                </code>
+                            </div>
                         </section>
                      </div>
                 </main>
-                <aside className="HolyGrail-ads">
-                    <div className="examples">
-                        <code>
-                            <div dangerouslySetInnerHTML={{__html: code}} />
-                        </code>
-                    </div>
-                </aside>
             </div>
            
         );

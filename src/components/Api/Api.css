@@ -24,6 +24,8 @@
 .description {
     padding-bottom: 4em;
     padding-left: 1em;
+    width: 50%;
+    float: left;
 }
 
 .logo {
@@ -44,59 +46,13 @@
 .subtopics {
     background-color: #ebf2f6;
     min-height: 100vh;
+    display: inline-block;
 }
 
 .examples {
-    background-color: #393939;
+    background-color: #272823;
     min-height: 100vh;
-}
-
-.HolyGrail {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.HolyGrail-body {
-    display: flex;
-    flex: 1;
-}
-
-.HolyGrail-content {
-    flex: 1;
-}
-
-.HolyGrail-ads {
-    flex: 0 0 45em;
-}
-
-.HolyGrail-nav {
-    flex: 0 0 20em;
-}
-
-.HolyGrail,
-.HolyGrail-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.HolyGrail-nav {
-    order: -1;
-}
-
-@media (min-width: 768px) {
-    .HolyGrail-body {
-        flex-direction: row;
-        flex: 1;
-    }
-    .HolyGrail-content {
-        flex: 1;
-    }
-    .HolyGrail-nav {
-        flex: 0 0 45em;
-    }
-    .HolyGrail-nav {
-        /* 12em is the width of the columns */
-        flex: 0 0 20em;
-    }
+    float: right;
+    padding: 1em;
+    width: 40%;
 }
