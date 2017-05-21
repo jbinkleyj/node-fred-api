@@ -13,6 +13,7 @@ includes:
   - relatedtags
   - release
   - releases
+  - series
   - errors
 
 search: true
