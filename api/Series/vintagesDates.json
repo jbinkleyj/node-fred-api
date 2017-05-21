@@ -1,0 +1,52 @@
+[
+    {
+        "series/vintagedates": [
+            {
+                "method": "getVintageDatesSeries",
+                "description": "Get the dates in history when a series' data values were revised or new data values were released. Vintage dates are the release dates for a series excluding release dates when the data for the series did not change.",
+                "request-type": "GET",
+                "parameters": {
+                    "series_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "The id for a series."
+                    },
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The end of the real-time period."
+                    },
+                    "limit": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 10000,
+                        "description": "The maximum number of results to return",
+                        "restrictions": "Must be an integer between 1 and 10000"
+                    },
+                    "offset": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "A non negative integer",
+                        "restrictions": "A non negative integer"
+                    },
+                    "sort_order": {
+                        "required": false,
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Sort results is ascending or descending order for attribute values specified by order_by.",
+                        "restrictions": "One of the following strings: 'asc', 'desc'."
+                    }
+                }
+            }
+        ]
+    }
+]

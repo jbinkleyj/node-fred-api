@@ -1,0 +1,20 @@
+[
+    {
+        "category": [
+            {
+                "method": "getCategory",
+                "description": "Gets a category",
+                "request-type": "GET",
+                "example": "fred.category.getCategory(125)",
+                "parameters": {
+                    "category_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "The id for a category."
+                    }
+                }
+            }
+        ]
+    }
+]

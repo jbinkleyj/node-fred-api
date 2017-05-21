@@ -1,0 +1,99 @@
+[
+    {
+        "series/search": [
+            {
+                "method": "getSeriesThatMatchesSearch",
+                "description": "Get economic data series that match search text.",
+                "request-type": "GET",
+                "parameters": {
+                    "series_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "The id for a series."
+                    },
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "9999-12-31 (latest available)",
+                        "description": "The end of the real-time period."
+                    },
+                    "limit": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 1000,
+                        "description": "The maximum number of results to return",
+                        "restrictions": "Must be an integer between 1 and 1000"
+                    },
+                    "offset": {
+                        "required": false,
+                        "type": "integer",
+                        "default": 0,
+                        "description": "A non negative integer",
+                        "restrictions": "A non negative integer"
+                    },
+                    "order_by": {
+                        "required": false,
+                        "type": "string",
+                        "default": "If the value of search_type is 'full_text' then the default value of order_by is 'search_rank'. If the value of search_type is 'series_id' then the default value of order_by is 'series_id'.",
+                        "description": "Order results by values of the specified attribute.",
+                        "restrictions": "One of the following strings: 'search_rank', 'series_id', 'title', 'units', 'frequency', 'seasonal_adjustment', 'realtime_start', 'realtime_end', 'last_updated', 'observation_start', 'observation_end', 'popularity'."
+                        
+                    },
+                    "sort_order": {
+                        "required": false,
+                        "type": "string",
+                        "default": "asc",
+                        "description": "Sort results is ascending or descending order for attribute values specified by order_by.",
+                        "restrictions": "One of the following strings: 'asc', 'desc'."
+                    },
+                    "filter_variable": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "The attribute to filter results by.",
+                        "restrictions": "One of the following strings: 'frequency', 'units', 'seasonal_adjustment'."
+                    },
+                    "filter_value": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "The value of the filter_variable attribute to filter results by."
+                    },
+                    "tag_names": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "A semicolon delimited list of tag names that series match all of."
+                    },
+                    "exclude_tag_names": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "A semicolon delimited list of tag names that series match none of.",
+                        "restrictions": "Parameter exclude_tag_names requires that parameter tag_names also be set to limit the number of matching series."
+                    },
+                    "search_text": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "The words to find matching tags with."
+                    },
+                    "search_type": {
+                        "required": false,
+                        "type": "string",
+                        "default": "none",
+                        "description": "Determines the type of search to perform.",
+                        "restrictions": "One of the following strings: 'full_text', 'series_id'. For more information, see https://research.stlouisfed.org/docs/api/fred/series_search.html#search_type"
+                    }
+                }
+            }
+        ]
+    }
+]

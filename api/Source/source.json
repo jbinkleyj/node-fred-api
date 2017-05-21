@@ -1,0 +1,31 @@
+[
+    {
+        "source": [
+            {
+                "method": "getSource",
+                "description": "Get all sources of economic data.",
+                "request-type": "GET",
+                "parameters": {
+                    "source_id": {
+                        "required": true,
+                        "type": "integer",
+                        "default": "none",
+                        "description": "The id for a source."
+                    },
+                    "realtime_start": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The start of the real-time period."
+                    },
+                    "realtime_end": {
+                        "required": false,
+                        "type": "date",
+                        "default": "Today's Date",
+                        "description": "The end of the real-time period."
+                    }
+                }
+            }
+        ]
+    }
+]

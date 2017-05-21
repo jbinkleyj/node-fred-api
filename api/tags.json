@@ -1,0 +1,10 @@
+[
+    {
+        "subtopic": "Tags",
+        "file": "./Tags/tags.json"
+    },
+    {
+        "subtopic": "Series",
+        "file": "./Tags/series.json"
+    }
+]
