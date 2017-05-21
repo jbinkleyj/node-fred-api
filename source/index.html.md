@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - categories
   - relatedtags
+  - release
   - errors
 
 search: true
