@@ -1,1 +1,1080 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="/node-fred-api/favicon.ico"><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"><title>API Documentation</title><link href="/node-fred-api/static/css/main.65027555.css" rel="stylesheet"></head><body><div id="root"></div><script type="text/javascript" src="/node-fred-api/static/js/main.7afbd90d.js"></script></body></html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;javascript&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="javascript">javascript</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://research.stlouisfed.org/docs/api/api_key.html'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id="introduction">Introduction</h1>
+
+<p>Welcome to the Fred Library/Api documentation for those who are using this with the node-fred library. You must obtain an API key through this <a href="https://research.stlouisfed.org/docs/api/api_key.html">website</a></p>
+
+<h1 id="authentication">Authentication</h1>
+
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+
+<p>You must have an API to run all requests.</p>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>Make sure to replace <code class="prettyprint">API_KEY</code> with your API key.</p>
+</blockquote>
+
+<aside class="notice">
+You must replace <code>API_KEY</code> with your personal API key.
+</aside>
+
+          <h1 id="categories">Categories</h1>
+
+<h2 id="get-a-category">Get A Category</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategory</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Category'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">125</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trade Balance"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Gets a category</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/children</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-child-categories">Get Child Categories</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="c1">// Category ID =&gt; U.S. Trade &amp; International Transactions</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getChildCategories</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Child Categories'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exports"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Imports"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3000</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Income Payments &amp; Receipts"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">125</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trade Balance"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">127</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"U.S. International Finance"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Gets the child categories for a specified parent category.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/children</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+</tr>
+<tr>
+<td>realtime_start</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The start of the real-time period.</td>
+</tr>
+<tr>
+<td>realtime_end</td>
+<td>9999-12-31 (latest available)</td>
+<td>false</td>
+<td>Date</td>
+<td>The end of the real-time period.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-related-categories">Get Related Categories</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="cm">/*
+Category ID 32073 has the parent-child category hierarchy:
+
+Categories &gt; Regional Data &gt; Federal Reserve Districts &gt; St. Louis &gt; States in District
+
+This category uses a related category to link to category ID 154 'Missouri' with hierarchy:
+
+Categories &gt; Regional Data &gt; States &gt; Missouri
+*/</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getRelatedCategories</span><span class="p">(</span><span class="mi">32073</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Categories'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">149</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arkansas"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Illinois"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">151</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indiana"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">152</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Kentucky"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">153</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mississippi"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">154</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missouri"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">193</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tennessee"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27281</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Get the related categories for a category. A related category is a one-way relation between 2 categories that is not part of a parent-child category hierarchy. Most categories do not have related categories</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/related</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+</tr>
+<tr>
+<td>realtime_start</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The start of the real-time period.</td>
+</tr>
+<tr>
+<td>realtime_end</td>
+<td>9999-12-31 (latest available)</td>
+<td>false</td>
+<td>Date</td>
+<td>The end of the real-time period.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-related-tags-within-category">Get Related Tags Within Category</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategoryRelatedTags</span><span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s2">"tag_names"</span><span class="p">:</span> <span class="s2">"services;quarterly"</span>
+<span class="p">})</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"order_by"</span><span class="p">:</span><span class="w"> </span><span class="s2">"series_count"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sort_order"</span><span class="p">:</span><span class="w"> </span><span class="s2">"desc"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"balance"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gen"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bea"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"U.S. Department of Commerce: Bureau of Economic Analysis"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">87</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nation"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geot"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Country Level"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United States of America"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goods"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gen"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">73</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nsa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"seas"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not seasonally adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">96</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"seas"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seasonally adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">94</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Get the related FRED tags for one or more FRED tags within a category. FRED tags are attributes assigned to series. For this request, related FRED tags are the tags assigned to series that match all tags in the tag_names parameter, no tags in the exclude_tag_names parameter, and the category set by the category_id parameter.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/related_tags</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Restrictions</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_start</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The start of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_end</td>
+<td>9999-12-31 (latest available)</td>
+<td>false</td>
+<td>Date</td>
+<td>The end of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>1000</td>
+<td>false</td>
+<td>Integer</td>
+<td>The maximum number of results to return</td>
+<td>Must be an integer between 1 and 1000</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>false</td>
+<td>Integer</td>
+<td>A non negative integer</td>
+<td>A non negative integer</td>
+</tr>
+<tr>
+<td>order_by</td>
+<td>series_count</td>
+<td>false</td>
+<td>String</td>
+<td>Order results by values of the specified attribute.</td>
+<td>One of the following strings: &lsquo;series_count&rsquo;, &lsquo;popularity&rsquo;, &lsquo;created&rsquo;, &lsquo;name&rsquo;, &lsquo;group_id&rsquo;.</td>
+</tr>
+<tr>
+<td>sort_order</td>
+<td>asc</td>
+<td>false</td>
+<td>String</td>
+<td>Sort results is ascending or descending order for attribute values specified by order_by.</td>
+<td>One of the following strings: &lsquo;asc&rsquo;, &lsquo;desc&rsquo;.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-series-within-category">Get Series Within Category</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategorySeries</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series for Category'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"order_by"</span><span class="p">:</span><span class="w"> </span><span class="s2">"series_id"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sort_order"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asc"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"series"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOPBCA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Balance on Current Account"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1960-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quarterly"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Q"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Billions of Dollars"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bil. of $"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seasonally Adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-07-09 08:46:45-05"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOPBCAA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Balance on Current Account"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1960-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Annual"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Billions of Dollars"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bil. of $"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Seasonally Adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NSA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-07-09 08:46:21-05"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">43</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOPBCAN"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Balance on Current Account"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1960-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quarterly"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Q"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Billions of Dollars"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bil. of $"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Seasonally Adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NSA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-07-09 08:46:50-05"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">37</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOPBGS"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Balance on Goods and Services"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1960-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"observation_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-01-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quarterly"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"frequency_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Q"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Billions of Dollars"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"units_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bil. of $"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seasonally Adjusted"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seasonal_adjustment_short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_updated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-07-09 08:46:25-05"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">38</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Get the series in a category.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/series</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Restrictions</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_start</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The start of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_end</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The end of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>1000</td>
+<td>false</td>
+<td>Integer</td>
+<td>The maximum number of results to return</td>
+<td>Must be an integer between 1 and 1000</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>false</td>
+<td>Integer</td>
+<td>A non negative integer</td>
+<td>A non negative integer</td>
+</tr>
+<tr>
+<td>order_by</td>
+<td>series_count</td>
+<td>false</td>
+<td>String</td>
+<td>Order results by values of the specified attribute.</td>
+<td>One of the following strings: &lsquo;series_id&rsquo;, &lsquo;title&rsquo;, &lsquo;units&rsquo;, &lsquo;frequency&rsquo;, &lsquo;seasonal_adjustment&rsquo;, &lsquo;realtime_start&rsquo;, &lsquo;realtime_end&rsquo;, &lsquo;last_updated&rsquo;, &lsquo;observation_start&rsquo;, &lsquo;observation_end&rsquo;, &lsquo;popularity&rsquo;.</td>
+</tr>
+<tr>
+<td>sort_order</td>
+<td>asc</td>
+<td>false</td>
+<td>String</td>
+<td>Sort results is ascending or descending order for attribute values specified by order_by.</td>
+<td>One of the following strings: &lsquo;asc&rsquo;, &lsquo;desc&rsquo;.</td>
+</tr>
+<tr>
+<td>filter_variable</td>
+<td>No filter</td>
+<td>false</td>
+<td>String</td>
+<td>The attribute to filter results by.</td>
+<td>On of the following strings: &lsquo;frequency&rsquo;, &lsquo;units&rsquo;, &lsquo;seasonal_adjustment&rsquo;.</td>
+</tr>
+<tr>
+<td>filter_value</td>
+<td>No filter</td>
+<td>false</td>
+<td>String</td>
+<td>The value of the filter_variable attribute to filter results by.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>tag_names</td>
+<td>No filter</td>
+<td>false</td>
+<td>Semicolon delimited string</td>
+<td>A semicolon delimited list of tag names that series match all of.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>exclude_tag_names</td>
+<td>No filter</td>
+<td>false</td>
+<td>Semicolon delimited string</td>
+<td>A semicolon delimited list of tag names that series match none of.</td>
+<td>Parameter exclude_tag_names requires that parameter tag_names also be set to limit the number of matching series.</td>
+</tr>
+</tbody></table>
+
+<h2 id="get-tags-for-a-category">Get Tags for a Category</h2>
+<pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Fred</span> <span class="nx">from</span> <span class="s1">'node-fred'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
+
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategoryTags</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"realtime_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"realtime_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-08-13"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"order_by"</span><span class="p">:</span><span class="w"> </span><span class="s2">"series_count"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sort_order"</span><span class="p">:</span><span class="w"> </span><span class="s2">"desc"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bea"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"U.S. Department of Commerce: Bureau of Economic Analysis"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">87</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nation"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geot"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Country Level"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usa"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"geo"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United States of America"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-02-27 10:18:19-06"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"popularity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"series_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Get the FRED tags for a category. Optionally, filter results by tag name, tag group, or search. Series are assigned tags and categories.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.stlouisfed.org/fred/category/tags</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Restrictions</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category_id</td>
+<td>0</td>
+<td>true</td>
+<td>Integer</td>
+<td>The id for a category.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_start</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The start of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>realtime_end</td>
+<td>Today&rsquo;s Date</td>
+<td>false</td>
+<td>Date</td>
+<td>The end of the real-time period.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>1000</td>
+<td>false</td>
+<td>Integer</td>
+<td>The maximum number of results to return</td>
+<td>Must be an integer between 1 and 1000</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>0</td>
+<td>false</td>
+<td>Integer</td>
+<td>A non negative integer</td>
+<td>A non negative integer</td>
+</tr>
+<tr>
+<td>order_by</td>
+<td>series_count</td>
+<td>false</td>
+<td>String</td>
+<td>Order results by values of the specified attribute.</td>
+<td>One of the following strings: &lsquo;series_count&rsquo;, &lsquo;popularity&rsquo;, &lsquo;created&rsquo;, &lsquo;name&rsquo;, &lsquo;group_id&rsquo;.</td>
+</tr>
+<tr>
+<td>sort_order</td>
+<td>asc</td>
+<td>false</td>
+<td>String</td>
+<td>Sort results is ascending or descending order for attribute values specified by order_by.</td>
+<td>One of the following strings: &lsquo;asc&rsquo;, &lsquo;desc&rsquo;.</td>
+</tr>
+<tr>
+<td>tag_names</td>
+<td>No Filter</td>
+<td>false</td>
+<td>Semicolon delimited string</td>
+<td>A semicolon delimited list of tag names that series match all of.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>tag_group_id</td>
+<td>No Filter</td>
+<td>false</td>
+<td>String</td>
+<td>A tag group id to filter tags by type.</td>
+<td>One of the following: &lsquo;freq&rsquo;, &lsquo;gen&rsquo;, &lsquo;geo&rsquo;, &lsquo;geot&rsquo;, &lsquo;rls&rsquo;, &lsquo;seas&rsquo;, &lsquo;src&rsquo;.</td>
+</tr>
+<tr>
+<td>search_text</td>
+<td>No Filter</td>
+<td>false</td>
+<td>String</td>
+<td>The words to find matching tags with.</td>
+<td>None</td>
+</tr>
+</tbody></table>
+
+          <h1 id="errors">Errors</h1>
+
+<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&lsquo;s frontmatter. Files are included in the order listed.</aside>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found &ndash; The specified kitten could not be found</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone &ndash; The kitten requested has been removed from our servers</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I&rsquo;m a teapot</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable &ndash; We&rsquo;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="javascript">javascript</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
