@@ -592,18 +592,6 @@ tag_group_id | No Filter | false | String | A tag group id to filter tags by typ
 search_text | No Filter | false | String | The words to find matching tags with. | None
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Get Tables Trees For Release
 
 ```javascript

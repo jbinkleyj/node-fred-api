@@ -12,6 +12,7 @@ includes:
   - categories
   - relatedtags
   - release
+  - releases
   - errors
 
 search: true
