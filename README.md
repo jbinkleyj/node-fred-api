@@ -1,7 +1,7 @@
-# Fred API
+## Node Fred Api Documentation
+
+Slate Documentation for the [node-fred library](https://github.com/pastorsj/node-fred)
 
 ## Author
-[Sam Pastoriza](https://github.com/pastorsj)
+[pastorsj](https://github.com/pastorsj/)
 
-## Inspired by
-[Slate API](https://github.com/lord/slate)
