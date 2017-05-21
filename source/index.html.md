@@ -10,6 +10,7 @@ toc_footers:
 
 includes:
   - categories
+  - relatedtags
   - errors
 
 search: true

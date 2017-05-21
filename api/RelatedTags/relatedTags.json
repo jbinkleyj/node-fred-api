@@ -47,7 +47,7 @@
                         "restrictions": "One of the following strings: 'asc', 'desc'."
                     },
                     "tag_names": {
-                        "required": false,
+                        "required": true,
                         "type": "string",
                         "default": "none",
                         "description": "A semicolon delimited list of tag names that series match all of."
@@ -77,7 +77,3 @@
         ]
     }
 ]
-
-"related_tags": {
-    
-}
