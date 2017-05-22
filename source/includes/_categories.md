@@ -490,7 +490,6 @@ realtime_start | Today's Date | false | Date | The start of the real-time period
 realtime_end | Today's Date | false | Date | The end of the real-time period. | None
 limit | 1000 | false | Integer | The maximum number of results to return | Must be an integer between 1 and 1000
 offset | 0 | false | Integer | A non negative integer | A non negative integer
-order_by | series_count | false | String | Order results by values of the specified attribute. | One of the following strings: 'series_count', 'popularity', 'created', 'name', 'group_id'.
 sort_order | asc | false | String | Sort results is ascending or descending order for attribute values specified by order_by. | One of the following strings: 'asc', 'desc'.
 tag_names | No Filter | false | Semicolon delimited string | A semicolon delimited list of tag names that series match all of. | None
 tag_group_id | No Filter | false | String | A tag group id to filter tags by type. | One of the following: 'freq', 'gen', 'geo', 'geot', 'rls', 'seas', 'src'.
