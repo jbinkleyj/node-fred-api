@@ -580,13 +580,13 @@ Get the related FRED tags for one or more FRED tags within a release. Optionally
 Parameter | Default | Required | Type | Description | Restrictions
 --------- | ------- | -------- | ---- | ----------- | ------------
 release_id | None | true | Integer | The id for a release. | None
+tag_names | No filter | true | Semicolon delimited string | A semicolon delimited list of tag names that series match all of. | None
 realtime_start | Today's Date | false | Date | The start of the real-time period. | None
 realtime_end | Today's Date | false | Date | The end of the real-time period. | None
 limit | 1000 | false | Integer | The maximum number of results to return | Must be an integer between 1 and 1000
 offset | 0 | false | Integer | A non negative integer | A non negative integer
 order_by | series_count | false | String | Order results by values of the specified attribute. | One of the following strings: 'series_count', 'popularity', 'created', 'name', 'group_id'.
 sort_order | asc | false | String | Sort results is ascending or descending release date order. | One of the following strings: 'asc', 'desc'.
-tag_names | No filter | false | Semicolon delimited string | A semicolon delimited list of tag names that series match all of. | None
 exclude_tag_names | No filter | false | Semicolon delimited string | A semicolon delimited list of tag names that series match none of. | Parameter exclude_tag_names requires that parameter tag_names also be set to limit the number of matching series.
 tag_group_id | No Filter | false | String | A tag group id to filter tags by type. | One of the following: 'freq', 'gen', 'geo', 'geot', 'rls', 'seas', 'src'.
 search_text | No Filter | false | String | The words to find matching tags with. | None
