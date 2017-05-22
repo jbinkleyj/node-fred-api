@@ -10,10 +10,13 @@ toc_footers:
 
 includes:
   - categories
-  - relatedtags
   - release
   - releases
   - series
+  - source
+  - sources
+  - tags
+  - relatedtags
   - errors
 
 search: true
