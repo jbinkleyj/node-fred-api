@@ -85,7 +85,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getAllSeriesMatchingTags()
+fred.category.getAllSeriesMatchingTags('slovenia;food;oecd')
   .then((res) => {
     console.log('Series Matching Tags', res);
   })
