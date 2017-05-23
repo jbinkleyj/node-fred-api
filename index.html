@@ -970,6 +970,14 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 <td>A non negative integer</td>
 </tr>
 <tr>
+<td>order_by</td>
+<td>series_count</td>
+<td>false</td>
+<td>String</td>
+<td>Order results by values of the specified attribute.</td>
+<td>One of the following strings: &lsquo;series_count&rsquo;, &lsquo;popularity&rsquo;, &lsquo;created&rsquo;, &lsquo;name&rsquo;, &lsquo;group_id&rsquo;.</td>
+</tr>
+<tr>
 <td>sort_order</td>
 <td>asc</td>
 <td>false</td>
@@ -1860,6 +1868,14 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 <td>None</td>
 </tr>
 <tr>
+<td>tag_names</td>
+<td>No filter</td>
+<td>true</td>
+<td>Semicolon delimited string</td>
+<td>A semicolon delimited list of tag names that series match all of.</td>
+<td>None</td>
+</tr>
+<tr>
 <td>realtime_start</td>
 <td>Today&rsquo;s Date</td>
 <td>false</td>
@@ -1906,14 +1922,6 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 <td>String</td>
 <td>Sort results is ascending or descending release date order.</td>
 <td>One of the following strings: &lsquo;asc&rsquo;, &lsquo;desc&rsquo;.</td>
-</tr>
-<tr>
-<td>tag_names</td>
-<td>No filter</td>
-<td>false</td>
-<td>Semicolon delimited string</td>
-<td>A semicolon delimited list of tag names that series match all of.</td>
-<td>None</td>
 </tr>
 <tr>
 <td>exclude_tag_names</td>
@@ -4151,7 +4159,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllSeriesMatchingTags</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllSeriesMatchingTags</span><span class="p">(</span><span class="s1">'slovenia;food;oecd'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series Matching Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
