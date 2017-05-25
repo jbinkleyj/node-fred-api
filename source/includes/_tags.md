@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getAllTags()
+fred.tags.getAllTags()
   .then((res) => {
     console.log('Tags', res);
   })
@@ -85,7 +85,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getAllSeriesMatchingTags('slovenia;food;oecd')
+fred.tags.getAllSeriesMatchingTags('slovenia;food;oecd')
   .then((res) => {
     console.log('Series Matching Tags', res);
   })

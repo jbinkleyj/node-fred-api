@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getAllRelatedTags('monetary+aggregates;weekly')
+fred.tags.getAllRelatedTags('monetary+aggregates;weekly')
   .then((res) => {
     console.log('Related Tags', res);
   })

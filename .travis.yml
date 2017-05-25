@@ -8,4 +8,5 @@ rvm:
 install:
   - gem install bundle
   - bundle install
-script: ./deploy.sh
+script: 
+  - ./deploy.sh

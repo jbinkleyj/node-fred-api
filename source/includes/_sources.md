@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getAllSources()
+fred.sources.getAllSources()
   .then((res) => {
     console.log('Sources', res);
   })

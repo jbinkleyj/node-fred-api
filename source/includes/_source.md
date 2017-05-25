@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getSource(1)
+fred.sources.getSource(1)
   .then((res) => {
     console.log('Source', res);
   })
@@ -56,7 +56,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getReleasesForSource(1)
+fred.sources.getReleasesForSource(1)
   .then((res) => {
     console.log('Releases For Source', res);
   })

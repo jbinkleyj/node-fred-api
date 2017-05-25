@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getSeries('GNPCA')
+fred.series.getSeries('GNPCA')
   .then((res) => {
     console.log('Series', res);
   })
@@ -66,7 +66,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getCategoriesForSeries('EXJPUS')
+fred.series.getCategoriesForSeries('EXJPUS')
   .then((res) => {
     console.log('Categories For Series', res);
   })
@@ -116,7 +116,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getObservationsForSeries('GNPCA')
+fred.series.getObservationsForSeries('GNPCA')
   .then((res) => {
     console.log('Observations For Series', res);
   })
@@ -197,7 +197,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getReleaseForSeries('IRA')
+fred.series.getReleaseForSeries('IRA')
   .then((res) => {
     console.log('Release For Series', res);
   })
@@ -247,7 +247,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getSeriesThatMatchesSearch('monetary+service+index')
+fred.series.getSeriesThatMatchesSearch('monetary+service+index')
   .then((res) => {
     console.log('Series That Match Search', res);
   })
@@ -355,7 +355,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getTagsForSeriesSearch('monetary+service+index')
+fred.series.getTagsForSeriesSearch('monetary+service+index')
   .then((res) => {
     console.log('Tags For Series That Match Search', res);
   })
@@ -435,7 +435,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getRelatedTagsForSeriesSearch('morgage+rate')
+fred.series.getRelatedTagsForSeriesSearch('morgage+rate')
   .then((res) => {
     console.log('Related Tags For Series That Match Search', res);
   })
@@ -516,7 +516,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getTagsForSeries('STLFSI')
+fred.series.getTagsForSeries('STLFSI')
   .then((res) => {
     console.log('Tags For Series', res);
   })
@@ -590,7 +590,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getUpdatedSeries()
+fred.series.getUpdatedSeries()
   .then((res) => {
     console.log('Latest Updated Series', res);
   })
@@ -691,7 +691,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getVintageDatesSeries('GNPCA')
+fred.series.getVintageDatesSeries('GNPCA')
   .then((res) => {
     console.log('Dates When Series Was Revised', res);
   })

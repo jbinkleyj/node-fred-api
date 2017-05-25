@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getRelease(53)
+fred.releases.getRelease(53)
   .then((res) => {
     console.log('Release', res);
   })
@@ -56,7 +56,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getReleaseWithDates(82)
+fred.releases.getReleaseWithDates(82)
   .then((res) => {
     console.log('Release With Dates', res);
   })
@@ -174,7 +174,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getSeriesForRelease(51)
+fred.releases.getSeriesForRelease(51)
   .then((res) => {
     console.log('Series for Release', res);
   })
@@ -276,7 +276,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getSourcesForRelease(51)
+fred.releases.getSourcesForRelease(51)
   .then((res) => {
     console.log('Sources for Release', res);
   })
@@ -331,7 +331,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getTagsForRelease(86)
+fred.releases.getTagsForRelease(86)
   .then((res) => {
     console.log('Tags for Release', res);
   })
@@ -488,7 +488,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getRelatedTagsForRelease(86)
+fred.releases.getRelatedTagsForRelease(86)
   .then((res) => {
     console.log('Related Tags for Release', res);
   })
@@ -599,7 +599,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getTableTreesForRelease(86)
+fred.releases.getTableTreesForRelease(86)
   .then((res) => {
     console.log('Table Trees for Release', res);
   })

@@ -7,7 +7,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getCategory(125)
+fred.categories.getCategory(125)
   .then((res) => {
     console.log('Category', res);
   })
@@ -52,7 +52,7 @@ const fred = new Fred(API_KEY);
 
 // Category ID => U.S. Trade & International Transactions
 
-fred.category.getChildCategories(13)
+fred.categories.getChildCategories(13)
   .then((res) => {
     console.log('Child Categories', res);
   })
@@ -126,7 +126,7 @@ This category uses a related category to link to category ID 154 'Missouri' with
 Categories > Regional Data > States > Missouri
 */
 
-fred.category.getRelatedCategories(32073)
+fred.categories.getRelatedCategories(32073)
   .then((res) => {
     console.log('Related Categories', res);
   })
@@ -200,7 +200,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getCategoryRelatedTags(125, {
+fred.categories.getCategoryRelatedTags(125, {
   "tag_names": "services;quarterly"
 })
   .then((res) => {
@@ -308,7 +308,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getCategorySeries(125)
+fred.categories.getCategorySeries(125)
   .then((res) => {
     console.log('Series for Category', res);
   })
@@ -426,7 +426,7 @@ import Fred from 'node-fred';
 
 const fred = new Fred(API_KEY);
 
-fred.category.getCategoryTags(125)
+fred.categories.getCategoryTags(125)
   .then((res) => {
     console.log('Tags', res);
   })
