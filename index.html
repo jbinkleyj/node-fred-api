@@ -256,7 +256,7 @@ You must replace <code>API_KEY</code> with your personal API key.
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategory</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getCategory</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Category'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -310,7 +310,7 @@ You must replace <code>API_KEY</code> with your personal API key.
 
 <span class="c1">// Category ID =&gt; U.S. Trade &amp; International Transactions</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getChildCategories</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getChildCategories</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Child Categories'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -406,7 +406,7 @@ This category uses a related category to link to category ID 154 'Missouri' with
 Categories &gt; Regional Data &gt; States &gt; Missouri
 */</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getRelatedCategories</span><span class="p">(</span><span class="mi">32073</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getRelatedCategories</span><span class="p">(</span><span class="mi">32073</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Categories'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -502,7 +502,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategoryRelatedTags</span><span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="p">{</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getCategoryRelatedTags</span><span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="p">{</span>
   <span class="s2">"tag_names"</span><span class="p">:</span> <span class="s2">"services;quarterly"</span>
 <span class="p">})</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
@@ -664,7 +664,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategorySeries</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getCategorySeries</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series for Category'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -864,7 +864,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategoryTags</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">getCategoryTags</span><span class="p">(</span><span class="mi">125</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1018,7 +1018,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getRelease</span><span class="p">(</span><span class="mi">53</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getRelease</span><span class="p">(</span><span class="mi">53</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1093,7 +1093,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getReleaseWithDates</span><span class="p">(</span><span class="mi">82</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getReleaseWithDates</span><span class="p">(</span><span class="mi">82</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Release With Dates'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1265,7 +1265,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getSeriesForRelease</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getSeriesForRelease</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series for Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1449,7 +1449,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getSourcesForRelease</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getSourcesForRelease</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Sources for Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1530,7 +1530,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getTagsForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getTagsForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags for Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1762,7 +1762,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getRelatedTagsForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getRelatedTagsForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Tags for Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -1954,7 +1954,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getTableTreesForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getTableTreesForRelease</span><span class="p">(</span><span class="mi">86</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Table Trees for Release'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2110,7 +2110,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getReleases</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getReleases</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Releases'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2239,7 +2239,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllReleasesWithDates</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">releases</span><span class="p">.</span><span class="nx">getAllReleasesWithDates</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Releases'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2376,7 +2376,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2460,7 +2460,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getCategoriesForSeries</span><span class="p">(</span><span class="s1">'EXJPUS'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getCategoriesForSeries</span><span class="p">(</span><span class="s1">'EXJPUS'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Categories For Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2535,7 +2535,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getObservationsForSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getObservationsForSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Observations For Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2711,7 +2711,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getReleaseForSeries</span><span class="p">(</span><span class="s1">'IRA'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getReleaseForSeries</span><span class="p">(</span><span class="s1">'IRA'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Release For Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2786,7 +2786,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getSeriesThatMatchesSearch</span><span class="p">(</span><span class="s1">'monetary+service+index'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getSeriesThatMatchesSearch</span><span class="p">(</span><span class="s1">'monetary+service+index'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series That Match Search'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -2982,7 +2982,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getTagsForSeriesSearch</span><span class="p">(</span><span class="s1">'monetary+service+index'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getTagsForSeriesSearch</span><span class="p">(</span><span class="s1">'monetary+service+index'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags For Series That Match Search'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3143,7 +3143,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getRelatedTagsForSeriesSearch</span><span class="p">(</span><span class="s1">'morgage+rate'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getRelatedTagsForSeriesSearch</span><span class="p">(</span><span class="s1">'morgage+rate'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Tags For Series That Match Search'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3312,7 +3312,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getTagsForSeries</span><span class="p">(</span><span class="s1">'STLFSI'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getTagsForSeries</span><span class="p">(</span><span class="s1">'STLFSI'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags For Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3425,7 +3425,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getUpdatedSeries</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getUpdatedSeries</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Latest Updated Series'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3572,7 +3572,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getVintageDatesSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">series</span><span class="p">.</span><span class="nx">getVintageDatesSeries</span><span class="p">(</span><span class="s1">'GNPCA'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Dates When Series Was Revised'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3682,7 +3682,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getSource</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">sources</span><span class="p">.</span><span class="nx">getSource</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Source'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3756,7 +3756,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getReleasesForSource</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">sources</span><span class="p">.</span><span class="nx">getReleasesForSource</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Releases For Source'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -3887,7 +3887,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllSources</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">sources</span><span class="p">.</span><span class="nx">getAllSources</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Sources'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -4014,7 +4014,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllTags</span><span class="p">()</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">getAllTags</span><span class="p">()</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -4159,7 +4159,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllSeriesMatchingTags</span><span class="p">(</span><span class="s1">'slovenia;food;oecd'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">getAllSeriesMatchingTags</span><span class="p">(</span><span class="s1">'slovenia;food;oecd'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Series Matching Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
@@ -4333,7 +4333,7 @@ Categories &gt; Regional Data &gt; States &gt; Missouri
 
 <span class="kr">const</span> <span class="nx">fred</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Fred</span><span class="p">(</span><span class="nx">API_KEY</span><span class="p">);</span>
 
-<span class="nx">fred</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">getAllRelatedTags</span><span class="p">(</span><span class="s1">'monetary+aggregates;weekly'</span><span class="p">)</span>
+<span class="nx">fred</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">getAllRelatedTags</span><span class="p">(</span><span class="s1">'monetary+aggregates;weekly'</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Related Tags'</span><span class="p">,</span> <span class="nx">res</span><span class="p">);</span>
   <span class="p">})</span>
