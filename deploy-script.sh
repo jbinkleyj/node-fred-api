@@ -6,9 +6,6 @@ TARGET_BRANCH="gh-pages"
 
 function doCompile {
   bundle exec middleman build --clean
-  ls
-  mv ./build/* ./
-  rm -r ./build/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -31,7 +28,7 @@ git fetch
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 # Clean out existing contents
-rm -rf build/**/* || exit 0
+rm -rf * || exit 0
 
 # Run our compile script
 doCompile
