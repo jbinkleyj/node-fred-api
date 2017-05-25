@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: ruby
 rvm:
 - 2.4.0
@@ -8,7 +8,7 @@ install:
 - gem install bundle
 - bundle install
 script:
-- ./deploy-script.sh
+- bash ./deploy-script.sh
 env:
   global:
   - ENCRYPTION_LABEL: "beae48297d74"
