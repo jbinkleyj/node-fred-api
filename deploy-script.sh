@@ -161,13 +161,15 @@ commit+push() {
 
 configure_repo() {
   git config user.name "Travis CI"
-  git config user.email "$COMMIT_AUTHOR_EMAIL"  
+  git config user.email "$COMMIT_AUTHOR_EMAIL"
+
+  ls ../
 
   ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
   ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
   ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
   ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-  openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -out ../deploy_key -d
+  openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out ../deploy_key -d
   chmod 600 ../deploy_key
   eval `ssh-agent -s`
   ssh-add deploy_key
