@@ -169,7 +169,7 @@ configure_repo() {
   ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
   ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
   openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out ../deploy_key -d
-  chmod 400 ../deploy_key
+  sudo chmod 600 ../deploy_key
   eval `ssh-agent -s`
   ssh-add deploy_key
 }
