@@ -28,7 +28,6 @@ git fetch
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 # Clean out existing contents
-rm -rf fonts/ images/ index.html javascripts/ stylesheets/ || exit 0
 
 # Run our compile script
 doCompile
