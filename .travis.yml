@@ -3,8 +3,7 @@ language: ruby
 rvm:
 - 2.4.0
 before_install:
-- openssl aes-256-cbc -K $encrypted_beae48297d74_key -iv $encrypted_beae48297d74_iv
-  -in deploy_key.pub.enc -out deploy_key.pub -d
+- openssl aes-256-cbc -K $encrypted_beae48297d74_key -iv $encrypted_beae48297d74_iv -in deploy_key.enc -out deploy_key -d
 install:
 - gem install bundle
 - bundle install

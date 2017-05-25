@@ -24,4 +24,4 @@ doc/
 .idea/
 
 node_modules/
-deploy_key.pub
+deploy_key
