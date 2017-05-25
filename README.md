@@ -1,3 +1,5 @@
+[![build status](https://travis-ci.org/pastorsj/node-fred-api.svg?branch=master)](https://travis-ci.org/pastorsj/node-fred-api)
+
 ## Node Fred Api Documentation
 
 Slate Documentation for the [node-fred library](https://github.com/pastorsj/node-fred)
