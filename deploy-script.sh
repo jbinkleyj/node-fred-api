@@ -22,7 +22,9 @@ SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing gh-pages for this repo into build/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
-git clone $REPO
+git clone $REPO repo
+cd repo
+git fetch
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 # Clean out existing contents
