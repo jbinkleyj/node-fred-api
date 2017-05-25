@@ -1,12 +1,18 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.2.5
-  - 2.3.3
-  - 2.4.0
-
+- 2.2.5
+- 2.3.3
+- 2.4.0
+before_install:
+- openssl aes-256-cbc -K $encrypted_beae48297d74_key -iv $encrypted_beae48297d74_iv
+  -in deploy_key.pub.enc -out deploy_key.pub -d
 install:
-  - gem install bundle
-  - bundle install
-script: 
-  - ./deploy.sh
+- gem install bundle
+- bundle install
+script:
+- "./deploy.sh"
+env:
+  global:
+  - ENCRYPTION_LABEL: "beae48297d74"
+  - COMMIT_AUTHOR_EMAIL: "pastorsj@rose-hulman.edu"
